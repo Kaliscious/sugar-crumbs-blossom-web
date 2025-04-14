@@ -568,6 +568,73 @@ nav {
   color: rgba(58, 52, 48, 0.6);
 }
 
+/* Founder's Section */
+.founders-section {
+  padding: 4rem 1rem;
+  background-color: rgba(254, 246, 233, 0.4);
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.founder-image {
+  position: relative;
+}
+
+.founder-image .circle-1 {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid rgba(212, 185, 144, 0.3);
+  border-radius: 50%;
+}
+
+.founder-image .circle-2 {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid rgba(212, 185, 144, 0.3);
+  border-radius: 50%;
+}
+
+.founder-image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 10;
+  border: 1px solid rgba(212, 185, 144, 0.4);
+}
+
+.founder-content h3 {
+  font-size: 1.5rem;
+  color: #3A3430;
+  margin-bottom: 1rem;
+}
+
+.founder-content p {
+  color: #3A3430;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.founder-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #D4B990;
+  font-size: 1.1rem;
+}
+
 /* Footer */
 footer {
   background-color: rgba(255, 255, 255, 0.7);

@@ -1,29 +1,238 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sugar & Crumbs | Artisanal Bakery</title>
-    <meta name="description" content="A charming artisanal bakery where sweetness blooms in every bite. Visit Sugar & Crumbs for delicate pastries, cakes and desserts crafted with love." />
-    <meta name="author" content="Sugar & Crumbs" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugar & Crumbs | Artisanal Bakery</title>
+  <meta name="description" content="A charming artisanal bakery where sweetness blooms in every bite. Visit Sugar & Crumbs for delicate pastries, cakes and desserts crafted with love.">
+  <meta name="author" content="Sugar & Crumbs">
 
-    <meta property="og:title" content="Sugar & Crumbs | Artisanal Bakery" />
-    <meta property="og:description" content="A charming artisanal bakery where sweetness blooms in every bite. Visit Sugar & Crumbs for delicate pastries, cakes and desserts crafted with love." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <meta property="og:title" content="Sugar & Crumbs | Artisanal Bakery">
+  <meta property="og:description" content="A charming artisanal bakery where sweetness blooms in every bite. Visit Sugar & Crumbs for delicate pastries, cakes and desserts crafted with love.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@lovable_dev">
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap">
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>♔</span> <!-- Cake slice icon replacement -->
+        Sugar <span>&</span> Crumbs
+      </a>
+      
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Our Sweets</a>
+      </div>
+      
+      <button class="mobile-menu-btn" id="menuToggle">
+        ≡ <!-- Menu icon replacement -->
+      </button>
+    </div>
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap">
-  </head>
+    <div class="mobile-menu" id="mobileMenu" style="display: none;">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Our Sweets</a>
+    </div>
+  </nav>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-bg">
+      <img src="/hero-bakery.jpg" alt="Sugar & Crumbs Bakery">
+      <div class="hero-gradient"></div>
+    </div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Sugar <span>&</span> Crumbs
+      </h1>
+      <div class="hero-divider">
+        <div class="line"></div>
+        <span class="star">★</span>
+        <div class="line"></div>
+      </div>
+      <p class="hero-subtitle">
+        Where sweetness blooms in every bite
+      </p>
+      <div>
+        <a href="menu.html" class="hero-btn">
+          View Our Sweets ›
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="circle-1"></div>
+          <img src="/feature-cake.jpg" alt="Exquisite cake">
+          <div class="circle-2"></div>
+        </div>
+
+        <div class="about-content">
+          <h2>A Little Sweet Story</h2>
+          <div class="about-divider"></div>
+          <p>
+            In a corner of Sweet Valley, where the morning light filters through lace curtains and the air is forever 
+            scented with vanilla and cinnamon, Sugar & Crumbs opened its doors. Our little bakery was born from a 
+            deep love for creating moments of joy through the art of pastry.
+          </p>
+          <p>
+            Each recipe carries a story, a memory, a celebration. From delicate macarons that melt like whispers 
+            to cakes adorned with edible flowers that seem to have been plucked from an enchanted garden, our 
+            creations are made with the belief that desserts are poetry for the senses.
+          </p>
+          <div class="about-tagline">
+            <span class="icon">♔</span> <!-- Cake slice icon replacement -->
+            <span>Crafted with love since 2018</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-section">
+    <div class="featured-container">
+      <div class="section-title">
+        <h2>Our Signature Sweets</h2>
+        <div class="section-divider">
+          <div class="line"></div>
+          <span class="star">★</span>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card featured">
+          <div class="product-image">
+            <div class="overlay"></div>
+            <img src="/macaron.jpg" alt="Rose Petal Macarons">
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Rose Petal Macarons</h3>
+            <p class="product-description">Delicate almond cookies infused with rose essence and filled with rose-scented buttercream</p>
+            <div class="product-footer">
+              <span class="product-price">$3.95</span>
+              <a href="menu.html" class="product-link">
+                See more <span class="chevron">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card featured">
+          <div class="product-image">
+            <div class="overlay"></div>
+            <img src="/cherry-tart.jpg" alt="Cherry Blossom Tart">
+            <div class="product-badge">Seasonal</div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Cherry Blossom Tart</h3>
+            <p class="product-description">Vanilla custard tart topped with sakura-infused cream and preserved cherry blossoms</p>
+            <div class="product-footer">
+              <span class="product-price">$6.25</span>
+              <a href="menu.html" class="product-link">
+                See more <span class="chevron">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="overlay"></div>
+            <img src="/lavender-cake.jpg" alt="Lavender Honey Cake">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Lavender Honey Cake</h3>
+            <p class="product-description">Light chiffon cake with layers of lavender-infused cream and a honey glaze</p>
+            <div class="product-footer">
+              <span class="product-price">$5.75</span>
+              <a href="menu.html" class="product-link">
+                See more <span class="chevron">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <a href="menu.html">
+          View All Sweets <span class="chevron">›</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>
+            <span class="icon">✿</span> <!-- Flower icon replacement -->
+            Sugar <span>&</span> Crumbs
+          </h3>
+          <p>Where sweetness blooms in every bite</p>
+        </div>
+        
+        <div class="footer-info">
+          <div class="footer-section">
+            <h4>Visit Us</h4>
+            <p>123 Blossom Avenue</p>
+            <p>Sweet Valley, CA 91234</p>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p class="contact-item">
+              <span class="contact-icon">✆</span> <!-- Phone icon replacement -->
+              (555) 123-4567
+            </p>
+            <p class="contact-item">
+              <span class="contact-icon">✉</span> <!-- Mail icon replacement -->
+              hello@sugarandcrumbs.com
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-copyright">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Sugar & Crumbs Bakery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      
+      menuToggle.addEventListener('click', function() {
+        if (mobileMenu.style.display === 'none') {
+          mobileMenu.style.display = 'block';
+        } else {
+          mobileMenu.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
 </html>
